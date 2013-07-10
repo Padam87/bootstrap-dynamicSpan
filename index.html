@@ -66,6 +66,18 @@
     <div class="container">
         <div class="row">
             <section id="demo" class="span12">
+                <h4>Before</h4>
+                <div class="row-fluid">
+                    <div class="span-dynamic" style="min-width: 300px;">1</div>
+                    <div class="span-dynamic" style="min-width: 200px;">2</div>
+                    <div class="span-dynamic" style="min-width: 400px;">3</div>
+                    <div class="span-dynamic" style="min-width: 500px;">4</div>
+                    <div class="span-dynamic" style="min-width: 100px;">5</div>
+                    <div class="span-dynamic" style="min-width: 200px;">6</div>
+                    <div class="span-dynamic" style="min-width: 200px;">7</div>
+                    <div class="span-dynamic" style="min-width: 300px;">8</div>
+                </div>
+                <h4>After</h4>
                 <div class="row-fluid">
                     <div class="span-dynamic" style="min-width: 300px;">1</div>
                     <div class="span-dynamic" style="min-width: 200px;">2</div>
@@ -133,7 +145,7 @@
     </div>
 
     <script type="text/javascript">
-        $('#demo .row-fluid').dynamicSpan();
+        $('#demo .row-fluid:last-of-type').dynamicSpan();
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-42378327-1']);
