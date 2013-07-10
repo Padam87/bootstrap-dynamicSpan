@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="keywords" content="smartsearch,search,jquery plugin,jquery,plugin,Adam Prager,Práger Ádám,google drive" />
+  <meta name="description" content="jQuery SmartSearch : A google drive search inspired search plugin." />
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+  <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="https://rawgithub.com/Padam87/bootstrap-dynamicSpan/master/bootstrap-dynamicspan.css" type="text/css">
+  <link rel="stylesheet" href="css/site.css">
+
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://rawgithub.com/Padam87/bootstrap-dynamicSpan/master/bootstrap-dynamicspan.js" type="text/javascript"></script>
+  <script src="js/onload.js" type="text/javascript"></script>
+
+  <title>Bootstrap DynamicSpan</title>
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1>
+                <a href="http://padam87.github.com/jquery-smartSearch">
+                    Bootstrap DynamicSpan
+                </a>
+            </h1>
+            <h2>
+                Dymanically sized spans for bootstrap
+            </h2>
+            <h3>
+                Created by <a href="https://github.com/Padam87">Adam Prager</a>
+            </h3>
+        </hgroup>
+        <nav>
+            <ul id="nav">
+                <li>
+                    <a href="http://padam87.github.com/jquery-smartSearch">
+                        <i class="icon-search"></i> SmartSearch
+                    </a>
+                </li>
+                <li>
+                    <a href="http://padam87.github.com/jquery-smartFunnel">
+                        <i class="icon-bar-chart"></i> SmartFunnel
+                    </a>
+                </li>
+            </ul>
+            <ul id="menu">
+                <li>
+                    <a href="https://github.com/Padam87/bootstrap-dynamicSpan/zipball/master">
+                        <i class="icon-download-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Padam87/bootstrap-dynamicSpan">
+                        <i class="icon-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <section id="demo" class="span12">
+                <div class="well clearfix">
+                    <div class="row-fluid">
+                        <div class="span-dynamic" style="min-width: 300px;">1</div>
+                        <div class="span-dynamic" style="min-width: 200px;">2</div>
+                        <div class="span-dynamic" style="min-width: 400px;">3</div>
+                        <div class="span-dynamic" style="min-width: 500px;">4</div>
+                        <div class="span-dynamic" style="min-width: 100px;">5</div>
+                        <div class="span-dynamic" style="min-width: 200px;">6</div>
+                        <div class="span-dynamic" style="min-width: 200px;">7</div>
+                        <div class="span-dynamic" style="min-width: 300px;">8</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section id="code" class="span12">
+                <script src="https://gist.github.com/Padam87/5966562.js"></script>
+            </section>
+        </div>
+        <div class="row">
+            <section id="options" class="span12">
+                <table class="table">
+                    <tr>
+                        <th>Option</th>
+                        <th>Default</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>equalizeHeights</b>
+                            <br />
+                            <small>Equalize span heights?</small>
+                        </td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>beforeEqualizeHeights</b>
+                            <br />
+                            <small>Called before height equalization, ideal for ajax content loading</small>
+                        </td>
+                        <td>
+<pre>function() {
+}</pre>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <div class="row">
+            <section id="comments" class="span12">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'jquerysmartsearch'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </section>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#demo .row-fluid').dynamicSpan();
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38037228-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One&subset=latin,latin-ext);
+
+body {
+    background-image: url("../img/satinweave.png");
+    font-family: 'Oxygen', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+header hgroup {
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 100px 0;
+}
+
+#nav {
+    list-style-type: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    z-index: 10000;
+    background-image: url("../img/satinweave.png");
+    box-shadow: 0 0 2px #3277B5;
+}
+
+#nav li {
+    margin: 0 5px;
+}
+
+#nav li a {
+    color: #3277B5;
+    font-size: 24px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+#nav li a:hover {
+    color: #645B5C;
+}
+
+#menu {
+    list-style-type: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+    background-image: url("../img/satinweave.png");
+    box-shadow: 0 0 2px #3277B5;
+}
+
+#menu li {
+    margin: 0 5px;
+    float: left;
+}
+
+#menu li a {
+    color: #3277B5;
+    font-size: 48px;
+    line-height: 64px;
+    vertical-align: middle;
+}
+
+#menu li a:hover {
+    color: #645B5C;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+#demo .span-dynamic {
+    background-color: #3277B5;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
