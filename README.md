@@ -1,4 +1,1 @@
-bootstrap-dymanicSpan
-=====================
-
-Dymanically sized spans for bootstrap
+Check out the [demo page](http://padam87.github.com/bootstrap-dynamicSpan/).
