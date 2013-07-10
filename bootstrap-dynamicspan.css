@@ -1,0 +1,13 @@
+.row-fluid .span-dynamic {
+    display: inline-block;
+    width: auto;
+}
+.row-fluid .span-dynamic:first-child {
+    margin-left: 2.5641%;
+}
+
+@media (max-width: 767px) {
+    .row-fluid .span-dynamic:first-child {
+        margin-left: 0;
+    }
+}
