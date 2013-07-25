@@ -1,0 +1,9 @@
+{
+  "name": "bootstrap-dynamicSpan",
+  "version": "1.0.0",
+  "main": "bootstrap-dynamicspan.js",
+  "dependencies": {
+    "jquery": "*",
+    "bootstrap": "*"
+  }
+}
